@@ -1,0 +1,10 @@
+Question text,Does the same chainline intersect the beak and crown?
+Example text,Does the same chainline intersect the beak and crown? (marked with blue).
+Short name,beak_crown
+Left text,Yes
+Left link,2A-a-a
+Right text,No
+Right link,2A-a
+Back link,fleur_eagle
+Branch name,Single-Headed Eagle
+Restart link,basel_eagle

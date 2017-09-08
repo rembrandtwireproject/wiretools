@@ -1,0 +1,10 @@
+Question text,Is the 2nd segment of the wing noticeably shorter than the first segment?
+Example text,Is the second segment of the wing noticeably shorter than the first as shown here? (marked with blue).
+Short name,wing_shorter
+Left text,Yes
+Left link,2B-a-a
+Right text,No
+Right link,2B-b
+Back link,fleur_eagle
+Branch name,Single-Headed Eagle
+Restart link,basel_eagle

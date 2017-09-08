@@ -1,0 +1,10 @@
+Question text,Is there a fleur-de-lis at the center of the eagle?
+Example text,Is there a fleur-de-lis such as this one at the center of the eagle? (marked with grey).
+Short name,fleur_eagle
+Left text,Yes
+Left link,wing_shorter
+Right text,No
+Right link,beak_crown
+Back link,basel_eagle
+Branch name,Single-Headed Eagle
+Restart link,basel_eagle

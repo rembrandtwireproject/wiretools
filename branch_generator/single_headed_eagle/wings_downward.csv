@@ -1,0 +1,10 @@
+Question text,Do the wing tips point downwards?
+Example text,Do the wing tips point downwards? (marked with blue).
+Short name,wings_downward
+Left text,Yes
+Left link,A-a-a
+Right text,No
+Right link,only_letters_eagle
+Back link,basel_eagle
+Branch name,Single-Headed Eagle
+Restart link,basel_eagle

@@ -1,0 +1,10 @@
+Question text,Is there a basel crosier at the center of the eagle?
+Example text,Is there a basel crosier such as this one at the center of the eagle? (marked with grey).
+Short name,basel_eagle
+Left text,Yes
+Left link,wings_downward
+Right text,No
+Right link,fleur_eagle
+Back link,basel_eagle
+Branch name,Single-Headed Eagle
+Restart link,basel_eagle

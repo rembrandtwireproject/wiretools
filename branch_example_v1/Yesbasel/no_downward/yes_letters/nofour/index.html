@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head: links relevant css and js files-->
+<head>
+	<meta charset="UTF-8">
+	<title>Watermark Project</title>
+
+    <!-- Upload Image-->
+	<link rel="stylesheet" href="css/upload.css">
+	<script src="js/upload.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <!-- Main -->
+	<link rel="stylesheet" href="css/main.css">    
+
+    <!-- Editor -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://materializecss.com/css/ghpages-materialize.css"> 
+    <link rel="stylesheet" href="css/editor.css">
+</head>
+    
+<!-- Body -->
+<body onLoad="getImage();"><!-- As the page is loaded, get the saved image -->
+    <!-- Left Side -->
+    <div class="left-side">   
+        <!-- Logo -->
+        <img src="logo.png" style="width:350px;height:100px;">
+
+        <!-- Show uploaded image -->
+        <div id="imageContainer" >
+            <img src="" id="uploadedImage" class="center" style="margin-top: 0px;"/>
+            <img class="copy-upload-image" id="copyImage" style="display:none;"/>
+        </div>
+    
+        <!-- Open image editor button -->
+        <button type="button" onclick="showEditor();" class="image-editor">Open Image Editor</span></button>
+    <br/>
+
+        <!-- Flip Button -->
+        <div id="flipButton" style="display:none;">
+            <div class="file-upload-content">
+                <div class="image-title-wrap">
+                <button type="button" onclick="fliph();" class="rotate">Flip Horizontal
+                </button>
+                </div>
+            </div>
+            <br/>
+            <div class="file-upload-content">
+                <div class="image-title-wrap">
+                <button type="button" onclick="flipv();" class="rotate">Flip Vertical
+                </button>
+                </div>
+            </div>
+        </div>
+    <br/>
+
+        <!-- Editor: show the editor menus in two columns -->
+        <div id="editor" style="display:none;" class="container">
+            <div class="row">
+                <form id="imageEditor">
+                    <div class="sliders col s4">
+                        <p class="range-field">
+                            <label for="gs">Grayscale</label>
+                            <input type="range" id="gs" name="gs" min="0" max="100" value="0"/>
+                        </p>
+                        <p class="range-field">
+                            <label for="blur">Blur</label>
+                            <input type="range" id="blur" name="blur" min="0" max="10" value="0"/>
+                        </p>
+                        <p class="range-field">
+                            <label for="br">Exposure</label>
+                            <input id="br" name="br" type="range" min=0 max=200 value=100>
+                        </p>
+                        <p class="range-field">
+                            <label for="ct">Contrast</label>
+                            <input id="ct" name="ct" type="range" min=0 max=200 value=100>
+                        </p>
+                    </div>
+
+                    <div class="sliders col s4">
+                        <p class="range-field">
+                            <label for="opacity">Opacity</label>
+                            <input id="opacity" name="opacity" type="range" min=0 max=100 value=100>
+                        </p>
+                        <p class="range-field">
+                            <label for="invert">Invert</label>
+                            <input id="invert" name="invert" type="range" min=0 max=100 value=0>
+                        </p>
+                        <p class="range-field">
+                            <label for="saturate">Saturate</label>
+                            <input id="saturate" name="saturate" type="range" min=0 max=500 value=100>
+                        </p>
+                        <p class="range-field">
+                            <label for="sepia">Sepia</label>
+                            <input id="sepia" name="sepia" type="range" min=0 max=100 value=0>
+                        </p>
+                    </div>
+                    <br/><br/>
+                
+                    <button class="btn" type="reset" id="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+<!-- Main (Right) Page -->
+    <div class="main">
+        <!-- Show main question -->
+        <div class="mainQuestion">
+            <p align="center" style="color:black;">Your watermark is B-a-b</p>
+        </div>
+            
+        <!-- Select option -->
+<!--
+        <div class="optionWrapper">
+            <select id="finalSelection">
+                <option value="hide">-- Select --</option>
+                <option value="yesbasel" rel="icon-temperature">Yes_letters</option>
+                <option value="nobasel">No_letters</option>
+            </select> 
+        </div>        
+        <br/><br/>
+-->
+        
+        <!-- Confirm button -->
+        <!-- finalLink() function is defined in js/main.js. The function defines which index to go (either kba or kbb) depending on the selction from the select box. -->
+<!--
+        <div id="confirm">
+            <button type="button" onclick=finalLink();>Confirm</button>
+        </div>
+-->
+
+        <!-- Show instruction image -->     
+        <div class="instruction">
+            <p align="center">Example:</br>Watermark B-a-b can be distinguished by these features: a Basel crosier at the center of the eagle, three chainlines intersecting the body, and three claws extending from the foot which are rounded, not pointed at the ends.</br/>(marked with <span style="color: blue;">blue</span>).</p>
+            <img src="B-a-bex.png">
+        </div>
+    </div>
+
+    <!-- Editor -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://materializecss.com/bin/materialize.js'></script>
+    <script src="js/editor.js"></script>    
+
+    <!-- Main -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/main.js"></script>        
+</body>
+</html>

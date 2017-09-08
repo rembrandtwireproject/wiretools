@@ -1,0 +1,140 @@
+/* Image editor container style */
+.container {
+    display: block;
+    margin-left: 22%;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  font-size: 17px;
+  color: #fff;
+}
+
+input[type=range] {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.col {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #666666;
+}
+
+input {
+    background: transparent;
+    outline: 0;
+    border: 0;
+    color: white;
+}
+
+/* Image editor reset button style */
+.btn {
+  margin-top: 15px;
+  width: 66.5%;
+  background: #666666;
+}
+
+.btn:hover {
+  background: #666666;
+}
+
+.btn:active {
+  background: #666666;
+}
+
+.btn:focus {
+  background: #666666;    
+}
+
+/* rotate button style  */
+.rotate {
+  width: 60%;
+  margin: 0;
+  color: #fff;
+  background: #666666;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rotate:hover {
+  background: #666666;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.rotate:active {
+  background: #666666;
+  border: 0;
+  transition: all .2s ease;
+}
+
+.rotate:focus {
+  background: #666666;
+  border: 0;
+  transition: all .2s ease;
+}
+
+/* For image rotation. Please refer to editor.js. You would be able to find something like: img.attr('class','f4') */
+.f1 { 
+    transform:scale(1,1);
+    -ms-transform:scale(1,1)
+    -webkit-transform: scale(1, 1); 
+    max-height: 700px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 130px;
+}
+
+.f2 {  
+    transform:scale(-1,1);
+    -ms-transform:scale(-1,1)
+    -webkit-transform: scale(-1, 1); 
+    max-height: 700px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 130px;
+}
+
+.f3 {  
+    transform:scale(-1,-1);
+    -ms-transform:scale(-1,-1)
+    -webkit-transform: scale(-1, -1); 
+    max-height: 700px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 130px;
+}
+
+.f4 {  
+    transform:scale(1,-1);
+    -ms-transform:scale(1,-1)
+    -webkit-transform: scale(1, -1); 
+    max-height: 700px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 130px;
+}

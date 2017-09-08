@@ -1,0 +1,10 @@
+Question text,Are there letters and a cross at the bottom of the eagle?
+Example text,Are there letters and a cross at the bottom of the eagle? (marked with blue).
+Short name,letters_cross_eagle
+Left text,Yes
+Left link,D-a
+Right text,No
+Right link,C-a
+Back link,only_letters_eagle
+Branch name,Single-Headed Eagle
+Restart link,basel_eagle
