@@ -1,10 +1,15 @@
-Question text,Do four different chain lines intersect the eagle at various points?
-Example text,Are there four separate chain lines intersecting the eagle at various points? (marked with blue).
-Short name,four_chain_eagle
-Left text,Yes
-Left link,B-a-a
-Right text,No
-Right link,B-a-b
-Back link,only_letters_eagle
-Branch name,Single-Headed Eagle
-Restart link,basel_eagle
+Question text,Do four different chain lines intersect the eagle at various points?,
+Short name,four_chain_eagle,
+Example text,Are there four separate chain lines intersecting the eagle at various points? (marked with blue).,
+Left text,Yes,
+Left link,B-a-a,
+Right text,No,
+Right link,B-a-b,
+Back link,only_letters_eagle,
+Branch name,Single-Headed Eagle,
+Restart link,basel_eagle,
+,,
+OPTIONAL,,
+,Full view,Magnified
+text1,image1,image2
+text2,image3,image4

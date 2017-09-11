@@ -77,15 +77,24 @@ for file in glob.glob('*.csv'):
         form = list(csv.reader(infile))
 
     question_text = form[0][1]
-    example_text = form[1][1]
-    short_name = form[2][1]
-    left_text = form[3][1]
-    left_link = form[4][1]
-    right_text = form[5][1]
-    right_link = form[6][1]
-    back_link = form[7][1]
-    branch_name = form[8][1]
-    restart_link = form[9][1]
+    short_name    = form[1][1]
+    example_text  = form[2][1]
+    left_text     = form[3][1]
+    left_link     = form[4][1]
+    right_text    = form[5][1]
+    right_link    = form[6][1]
+    back_link     = form[7][1]
+    branch_name   = form[8][1]
+    restart_link  = form[9][1]
+
+    row1_1 = form[12][1]
+    row1_2 = form[12][2]
+    text1  = form[13][0]
+    text2  = form[14][0]
+    image1 = form[13][1]
+    image2 = form[13][2]
+    image3 = form[14][1]
+    image4 = form[14][2]
 
     replacements = {
         'replace_branch_name': branch_name,
@@ -105,5 +114,9 @@ for file in glob.glob('*.csv'):
             for src, target in replacements.iteritems():
                 line = line.replace(src, target)
             outfile.write(line)
+
+    if image1 != 'image1':
+        print short_name
+        # TODO: need to actually generate the grid of images here.
 
 clean('../../')
