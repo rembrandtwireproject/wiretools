@@ -2,6 +2,7 @@
 # WIRE branch porting
 
 First presented in class on Fri 9/7/17
+
 Notes compiled for class on Fri 9/15/17
 
 Amanda House (aeh247)
