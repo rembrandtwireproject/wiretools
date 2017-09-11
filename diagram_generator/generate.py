@@ -1,23 +1,24 @@
 # Author: Amanda House (aeh247@cornell.edu)
 
-import csv
-import graphviz as gv
+import csv, graphviz as gv, sys, os
 
-with open('tree.csv', 'rb') as file:
-    reader = csv.reader(file)
-    flat_tree = list(reader)
+fname = sys.argv[1]
+oname = os.path.splitext(fname)[0]
 
-flat_tree = flat_tree[1:]
+with open(fname, 'rb') as file:
+    form = list(csv.reader(file))
 
-tree = gv.Digraph(format='svg')
+form = form[1:]
 
-for row in flat_tree:
+tree = gv.Digraph(format='pdf')
+
+for row in form:
     parent = row[0]
-    child1 = row[1]
-    child2 = row[2]
-    if child1 != '':
-        tree.edge(parent, child1, row[3])
-    if child2 != '':
-        tree.edge(parent, child2, row[4])
+    yes = row[1]
+    no = row[2]
+    if yes != '':
+        tree.edge(parent, yes, 'Yes')
+    if no != '':
+        tree.edge(parent, no, 'No')
 
-tree.render('out/tree')
+tree.render('out/' + oname)
