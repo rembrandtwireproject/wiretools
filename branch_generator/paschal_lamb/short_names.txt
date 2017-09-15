@@ -1,0 +1,31 @@
+
+Is the Paschal Lamb in a round cartouche or a shield?
+cartouche_shield
+
+Is the watermark centered on the central chain line?
+note: reword the question above, use the shortname below
+chain_line_center
+
+Are there initials at the base of the shield?
+initials_base_shield
+
+Is the band of the crown embellished with three circles?
+band_crown_circles
+
+Is there a single arch above the crown or a double arch?
+single_double_arch
+
+Are the boundaries of the shield warped or relatively straight?
+shield_warped_straight
+
+Is the line descending the shield's bottom mantle relatively straight or crooked, bending towards the flag?
+mantle_straight_crooked
+
+Are the loops on the sheep's fleece open?
+loops_fleece_open
+
+Is the top line of the crest slightly slanted?
+line_crest_slanted
+
+Is there a bump in the boundary of the crest on the side of the flag?
+bump_crest_side_flag
