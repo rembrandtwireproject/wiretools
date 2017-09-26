@@ -1,0 +1,11 @@
+BRANCH NAME,,
+Single-Headed Eagle,,
+PARENT,YES,NO
+basel_eagle,wings_downward,fleur_eagle
+wings_downward,basel_Aaa,only_letters_eagle
+only_letters_eagle,wings_chain_line,letters_cross_eagle
+wings_chain_line,basel_Baa,basel_Bab
+letters_cross_eagle,basel_Da,basel_Ca
+fleur_eagle,wing_shorter,beak_crown
+wing_shorter,B'aa,B'b
+beak_crown,Aaa,Aa

@@ -1,0 +1,21 @@
+<div class="split">
+  <div class="left">
+    <h3>replace_branch_textname</h3>
+    <a class="button" href="diagram.html">See branch diagram</a>
+    <br>
+    <a class="button" href="replace_back_shortname.html">↩ Back one step</a>
+    <a class="button" href="index.html">↻ Restart this branch</a>
+    insert_here
+  </div>
+  <div class="right">
+    <h3>Your comparative image</h3>
+  </div>
+</div>
+<script>
+  sessionStorage.last = "replace_this_shortname";
+  const image = sessionStorage.image;
+  const elem = document.createElement("img");
+  elem.setAttribute("src", image);
+  const right = document.getElementsByClassName("right")[0];
+  right.appendChild(elem);
+</script>
