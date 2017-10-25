@@ -1,6 +1,6 @@
 # Author: Amanda House (aeh247@cornell.edu)
 
-import os, sys, csv, graphviz as gv, textwrap
+import os, sys, csv #graphviz as gv, textwrap
 
 OUT = "out/"
 HTML = ".html"
@@ -227,18 +227,18 @@ else:
             wrap_writefile(outname, outfile)
 
     # 3.2.4  Make pdf diagram.
+	#
+    #diagram = gv.Digraph(format="pdf")
 
-    diagram = gv.Digraph(format="pdf")
+    #def clean_str(s):
+     #   s = unicode(s, "utf-8")
+      #  s = textwrap.wrap(s, width=20)
+       # s = '\n'.join(s)
+        #return s
 
-    def clean_str(s):
-        s = unicode(s, "utf-8")
-        s = textwrap.wrap(s, width=20)
-        s = '\n'.join(s)
-        return s
+    #for node, d in tree.iteritems():
+     #   if d[TYPE] == QU:
+      #      diagram.edge(clean_str(d[NAME]), clean_str(tree[d[YES]][NAME]), YES)
+       #     diagram.edge(clean_str(d[NAME]), clean_str(tree[d[NO]][NAME]), NO)
 
-    for node, d in tree.iteritems():
-        if d[TYPE] == QU:
-            diagram.edge(clean_str(d[NAME]), clean_str(tree[d[YES]][NAME]), YES)
-            diagram.edge(clean_str(d[NAME]), clean_str(tree[d[NO]][NAME]), NO)
-
-    diagram.render("out_gv/" + folder, cleanup=True)
+    #diagram.render("out_gv/" + folder, cleanup=True)
