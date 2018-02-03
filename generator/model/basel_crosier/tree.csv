@@ -1,0 +1,13 @@
+BRANCH NAME,,
+Basel Crosier,,
+PARENT,YES,NO
+basel_q1,basel_q2,basel_q3
+basel_q2,Aaa,Aab
+basel_q3,basel_q4,basel_q5
+basel_q4,basel_q7,basel_q6
+basel_q5,Cb,basel_q8
+basel_q6,E'b,E'a
+basel_q7,basel_q10,basel_q9
+basel_q8,Caa,Cab
+basel_q9,D'a,Da
+basel_q10,B'ab,B'aa
